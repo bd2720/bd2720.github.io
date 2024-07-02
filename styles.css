@@ -1,1 +1,39 @@
+:root {
+  --bg-col: #1f1f1f;
+  --mg-col: #2f2f2f;
+  --text-col: #efefef;
+}
 
+.open-sans-m {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body {
+  background-color: var(--bg-col);
+  color: var(--text-col);
+  font-size: 150%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body > * {
+  background-color: var(--mg-col);
+  padding: 0em 1em;
+  margin: 0.3em 0.4em;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+header > * {
+  padding: 0.2em 1.1em;
+}
