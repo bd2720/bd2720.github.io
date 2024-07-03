@@ -17,16 +17,13 @@
     "wdth" 100;
 }
 
-
 body {
   background-color: var(--bg-col);
   color: var(--text-col);
-  margin: 1.4em 1.6em;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 1.4em 8em;
+  min-width: min-content;
+  max-width: max-content;
+  margin: auto;
 }
 
 body > * {
@@ -35,9 +32,14 @@ body > * {
 
 header {
   background-color: var(--mg-col);
+  font-size: 150%;
+
   display: flex;
   flex-direction: row;
-  font-size: 150%;
+  justify-content: space-evenly;
+  min-width: min-content;
+  max-width: max-content;
+  margin: auto;
 }
 
 .logo {
@@ -54,18 +56,36 @@ header > * {
 section {
   background-color: var(--mg-col);
   padding: 0.1em 1.2em 0.1em 1em;
-  margin: 0.6em;
+  margin: 1em;
 }
 
 .about {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about-item {
+  background-color: var(--mg-col);
+  padding: 0.1em 1.2em 0.1em 1em;
+  margin: 1em;
+}
+
+.about-item-lnk {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+  padding: 1em;
 }
 
 footer {
   background-color: var(--mg-col);
   padding: 0.3em 1em;
-  justify-content: space-between;
 
+  display: flex;
+  justify-content: space-between;
 }
 
 a:link {
