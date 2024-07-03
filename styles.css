@@ -1,7 +1,11 @@
 :root {
   --bg-col: #1f1f1f;
   --mg-col: #2f2f2f;
+  --fg-col: #3f3f3f;
   --text-col: #efefef;
+
+  --a-col-new: lightblue;
+  --a-col-vis: pink;
 }
 
 .open-sans-m {
@@ -13,41 +17,61 @@
     "wdth" 100;
 }
 
-body > * {
-  
-}
 
 body {
   background-color: var(--bg-col);
   color: var(--text-col);
   margin: 1.4em 1.6em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-header{
+body > * {
+  margin: 0.3em;
+}
+
+header {
   background-color: var(--mg-col);
   display: flex;
   flex-direction: row;
-  width: fit-content;
-
   font-size: 150%;
-
 }
 
-header > *{
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > * {
   margin: 1em;
   padding: 0.3em;
 }
 
 section {
   background-color: var(--mg-col);
-  width: fit-content;
   padding: 0.1em 1.2em 0.1em 1em;
-  margin: 2em 0em;
+  margin: 0.6em;
 }
 
+.about {
+  display: flex;
+}
 
 footer {
   background-color: var(--mg-col);
-  width: fit-content;
   padding: 0.3em 1em;
+  justify-content: space-between;
+
+}
+
+a:link {
+  color: var(--a-col-new);
+}
+
+a:visited {
+  color: var(--a-col-vis);
 }
