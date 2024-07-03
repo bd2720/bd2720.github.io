@@ -13,27 +13,41 @@
     "wdth" 100;
 }
 
+body > * {
+  
+}
+
 body {
   background-color: var(--bg-col);
   color: var(--text-col);
-  font-size: 150%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 1.4em 1.6em;
 }
 
-body > * {
+header{
   background-color: var(--mg-col);
-  padding: 0em 1em;
-  margin: 0.3em 0.4em;
-}
-
-header {
   display: flex;
   flex-direction: row;
+  width: fit-content;
+
+  font-size: 150%;
+
 }
 
-header > * {
-  padding: 0.2em 1.1em;
+header > *{
+  margin: 1em;
+  padding: 0.3em;
+}
+
+section {
+  background-color: var(--mg-col);
+  width: fit-content;
+  padding: 0.1em 1.2em 0.1em 1em;
+  margin: 2em 0em;
+}
+
+
+footer {
+  background-color: var(--mg-col);
+  width: fit-content;
+  padding: 0.3em 1em;
 }
