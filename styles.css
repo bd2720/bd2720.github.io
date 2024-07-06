@@ -17,27 +17,25 @@
     "wdth" 100;
 }
 
-.bg {
-  /* https://stackoverflow.com/questions/27850472/html5-video-background-keep-center-of-video-in-center */
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  transform: translateX(calc((100% - 100vw) / 2));
-}
-
-.page {
-  margin: 2em;
-  opacity: 0.95;
-}
-
 body {
   background-color: var(--bg-col);
+  margin: 2em;
+}
+
+#bg {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transform: translateX(calc((100%-100vw)/2));
+  z-index: -1;
+}
+
+#page {
   color: var(--text-col);
   max-width: max-content;
   min-width: min-content;
   margin: auto;
+  opacity: 0.9;
 }
 
 header {
@@ -49,7 +47,6 @@ header {
   justify-content: space-evenly;
   min-width: min-content;
   max-width: max-content;
-  margin-top: 1em;
 }
 
 .logo {
@@ -71,6 +68,10 @@ section {
   background-color: var(--mg-col);
   padding: 0.1em 1.2em 0.1em 1em;
   margin-top: 1em;
+}
+
+li {
+  list-style-type: square;
 }
 
 .about {
