@@ -118,17 +118,29 @@ li {
   grid-template-rows: repeat(1, auto);
   grid-template-columns: repeat(2, auto);
   justify-content: space-evenly;
-  margin-bottom: 1.2em;
-  gap: 1em;
 }
 
 
 .project-list-item {
   background-color: var(--fg-col);
+  margin: 0.5em;
+  margin-bottom: 1em;
 }
 
 .project-list-item > * {
   margin-left: 1em;
+  margin-right: 1em;
+}
+
+.project-list-item-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project-list-item-head > * {
+  white-space: nowrap;
 }
 
 /* any children, not just direct */
@@ -160,5 +172,16 @@ footer {
 
   header {
     flex-wrap: wrap;
+  }
+
+  .project-list {
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
+@media(width <= 600px) {
+  .about {
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
