@@ -64,6 +64,18 @@ header {
   margin-top: 1em;
 }
 
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.header-text > * {
+  width: fit-content;
+  margin: 0.5em 0;
+}
+
 .logo {
   display: flex;
   justify-content: center;
@@ -159,10 +171,11 @@ footer {
 
   position: absolute;
   width: calc(100% - 4em);
-  transform: translateY(78px);
+  transform: translateY(86px);
 }
 
 /* FOR MOBILE! */
+
 @media(width <= 900px) {
 
   #page {
@@ -176,6 +189,16 @@ footer {
 
   .project-list {
     grid-template-columns: repeat(1, auto);
+  }
+}
+
+@media(width <= 700px){
+  header {
+    font-size: 120%;
+  }
+
+  footer {
+    font-size: 70%;
   }
 }
 
