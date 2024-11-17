@@ -126,7 +126,7 @@ li {
 .project-list {
   display: grid;
   grid-template-rows: repeat(1, auto);
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(1, auto);
   justify-content: space-evenly;
 }
 
@@ -187,9 +187,6 @@ footer {
     flex-wrap: wrap;
   }
 
-  .project-list {
-    grid-template-columns: repeat(1, auto);
-  }
 }
 
 @media(width <= 700px){
