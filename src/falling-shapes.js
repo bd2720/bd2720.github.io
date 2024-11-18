@@ -9,7 +9,8 @@ const sq_size = 20;
 const colors = ["#9eb7ed", "#edb8dd", "#adedb3"];
 
 function setup() {
-	canvas = createCanvas(1920, document.body.offsetHeight);
+  // limit screen height
+	canvas = createCanvas(1920, Math.min(document.body.offsetHeight, 2048));
 	canvas.parent('bg');
 
   frameRate(fps);
@@ -45,7 +46,7 @@ function setup() {
 
 function draw() {
   background("#1f1f1f");
-  // add new shape every half-second
+  // add new shape every quarter-second
   if (frameCount % fpqs === 0) {
     activeShapes.push({
       x: floor(random(0, width / sq_size)) * sq_size,
