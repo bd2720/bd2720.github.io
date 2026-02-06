@@ -176,7 +176,7 @@ li {
   white-space: nowrap;
 }
 
-.project-list video {
+.project-list video, .project-list img {
   width: calc(100% - 2em);
   margin-bottom: 2%;
 }
